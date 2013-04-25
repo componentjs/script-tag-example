@@ -4,7 +4,7 @@
 
  For those of you who are not familiar Component uses GitHub as its primary registry, thus we do not need to fight over names - there are no collisions. Prior to this release if you were to `require()` a component from _outside_ another you would have to add the username prefix such as `require('visionmedia-superagent')`. This restriction has been lifed and a simple call to `require('superagent')` will do.
 
- This simple change makes Component a _much_ better candidate for using Components within existing applications or in tandum with other frameworks such as Backbone or AngularJS. The downside of this approach of course is that the rest of your application remains using globals instead of self-contained modules.
+ This simple change makes Component a _much_ better candidate for using Components within existing applications or in tandem with other frameworks such as Backbone or AngularJS. The downside of this approach of course is that the rest of your application remains using globals instead of self-contained modules.
 
 ## Getting started
 
@@ -14,7 +14,7 @@
 $ npm install -g component
  ```
 
- To get started create a new direction, and place a file named index.html within it, containing a simple list of pets:
+ To get started create a new directory, and place a file named index.html within it, containing a simple list of pets:
 
  ```html
 <html>
@@ -42,7 +42,7 @@ $ npm install -g component
 </html>
 ```
 
-As a contrived example we'll iterate the pet dom nodes and add a paragraph displaying the oldest ferret. To get started installing components create a `./component.json` file with two dependencies, the first is [enumerable](https://github.com/component/enumerable) which we'll use to filter the elements, and [dom](https://github.com/component/dom) which is effectively a small jQuery dom manipulation replacment which itself is comprised of several smaller logical modules.
+As a contrived example we'll iterate the pet dom nodes and add a paragraph displaying the oldest ferret. To get started installing components create a `./component.json` file with two dependencies, the first is [enumerable](https://github.com/component/enumerable) which we'll use to filter the elements, and [dom](https://github.com/component/dom) which is effectively a small jQuery dom manipulation replacement which itself is comprised of several smaller logical modules.
 
 ```json
 {
