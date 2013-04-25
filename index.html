@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>Component example</title>
+  <style>
+    body {
+      font: 14px Helvetica;
+      padding: 50px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Component example</h1>
+  <p>Simple example of using component with script tags for integration with existing frameworks.</p>
+
+  <ul id="pets">
+    <li data-species="cat" data-age="3">Manny</li>
+    <li data-species="cat" data-age="3">Luna</li>
+    <li data-species="ferret" data-age="3">Tobi</li>
+    <li data-species="ferret" data-age="2">Loki</li>
+    <li data-species="ferret" data-age="6">Jane</li>
+  </ul>
+
+  <script src="build/build.js"></script>
+  <script>
+    var dom = require('dom')
+    var list = require('enumerable')
+
+    var pets = list(dom('#pets > li'))
+
+    var name = pets
+      .select('.attr("data-species") == "ferret"')
+      .select('.attr("data-age") > 4')
+      .map('text()')
+      .first()
+
+    dom('<p>')
+      .text('The oldest ferret is ' + name)
+      .appendTo('body')
+  </script>
+</body>
+</html>

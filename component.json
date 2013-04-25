@@ -1,0 +1,7 @@
+{
+  "name": "myapp",
+  "dependencies": {
+    "component/enumerable": "0.3.1",
+    "component/dom": "0.6.0"
+  }
+}
