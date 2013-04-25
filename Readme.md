@@ -6,7 +6,7 @@
 
  This simple change makes Component a _much_ better candidate for using Components within existing applications or in tandum with other frameworks such as Backbone or AngularJS. The downside of this approach of course is that the rest of your application remains using globals instead of self-contained modules.
 
- ## Getting started
+## Getting started
 
  First you'll want to install `component(1)`, if you don't have node installed view the instructions [here](github.com/component/component), otherwise execute:
 
@@ -58,7 +58,7 @@ As a contrived example we'll iterate the pet dom nodes and add a paragraph displ
 
 Now install the components:
 
-```json
+```
 $ component install
 
      install : component/enumerable@0.3.1
