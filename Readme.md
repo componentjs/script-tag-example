@@ -8,7 +8,7 @@
 
 ## Getting started
 
- First you'll want to install `component(1)`, if you don't have node installed view the instructions [here](github.com/component/component), otherwise execute:
+ First you'll want to install `component(1)`, if you don't have node installed view the instructions [here](https://github.com/component/component), otherwise execute:
 
  ```
 $ npm install -g component
